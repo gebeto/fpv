@@ -1,5 +1,4 @@
-# fpv
-FPV Setup
+# FPV Setup
 
 
 ## Radio
