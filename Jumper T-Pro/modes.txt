@@ -1,14 +1,25 @@
 # aux
-aux 0 0 2 1400 1600 0 0
-aux 1 1 1 900 1100 0 0
-aux 2 2 1 1400 1600 0 0
-aux 3 13 4 1900 2100 0 0
-aux 4 19 6 1900 2100 0 0
-aux 5 28 7 900 1100 0 0
-aux 6 35 0 900 1100 0 0
 
-# prearm
-aux 7 36 3 1900 2100 0 0
+# preARM
+aux 0 36 3 1900 2100 0 0
+
+# ARM
+aux 1 0 2 1400 1600 0 0
+
+# beeper
+aux 2 13 4 1900 2100 0 0
+# flip after crash
+aux 3 35 0 900 1100 0 0
+
+# air
+aux 4 28 7 900 1100 0 0
+# angle
+aux 5 1 1 900 1100 0 0
+# horizon
+aux 6 2 1 1400 1600 0 0
+
+osd disable
+aux 7 19 6 1900 2100 0 0
+
 
 save
-
