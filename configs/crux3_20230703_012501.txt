@@ -1,0 +1,178 @@
+# 
+
+# diff all
+
+# version
+# Betaflight / STM32F411 (S411) 4.4.2 Jun  1 2023 / 09:11:27 (23d066d08) MSP API: 1.45
+
+# config: YES
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name CRAZYBEEF4SX1280
+manufacturer_id HAMO
+mcu_id 001e00523631501820353043
+signature 
+
+# name: crux3
+
+# resources
+resource FLASH_CS 1 NONE
+
+# dma
+dma pin A09 NONE
+dma pin A10 NONE
+
+# feature
+feature -RX_SERIAL
+feature -ANTI_GRAVITY
+feature RX_SPI
+
+# serial
+serial 1 2048 115200 57600 0 115200
+
+# beacon
+beacon RX_LOST
+beacon RX_SET
+
+# aux
+aux 0 0 0 1900 2100 0 0
+aux 1 1 4 1550 1675 0 0
+aux 2 2 4 1300 1500 0 0
+aux 3 13 5 1900 2100 0 0
+aux 4 19 1 1900 2100 0 0
+aux 5 35 2 1900 2100 0 0
+aux 6 36 6 1900 2100 0 0
+aux 7 39 3 1900 2100 0 0
+
+# adjrange
+adjrange 0 0 1 900 1200 12 1 0 0
+adjrange 1 0 1 1200 1800 12 1 0 0
+adjrange 2 0 1 1800 2100 12 1 0 0
+
+# vtxtable
+vtxtable bands 6
+vtxtable channels 8
+vtxtable band 1 BOSCAM_A A FACTORY 5865 5845 5825 5805 5785 5765 5745 5725
+vtxtable band 2 BOSCAM_B B FACTORY 5733 5752 5771 5790 5809 5828 5847 5866
+vtxtable band 3 BOSCAM_E E FACTORY 5705 5685 5665    0 5885 5905    0    0
+vtxtable band 4 FATSHARK F FACTORY 5740 5760 5780 5800 5820 5840 5860 5880
+vtxtable band 5 RACEBAND R FACTORY 5658 5695 5732 5769 5806 5843 5880 5917
+vtxtable band 6 LOWRACE  L FACTORY 5333 5373 5413 5453 5493 5533 5573 5613
+vtxtable powerlevels 5
+vtxtable powervalues 14 2 14 20 26
+vtxtable powerlabels 0 RCE 25 100 400
+
+# master
+set dyn_notch_q = 120
+set acc_calibration = 41,21,-5,1
+set dshot_bidir = ON
+set dshot_bitbang = AUTO
+set motor_pwm_protocol = DSHOT300
+set motor_poles = 12
+set vbat_min_cell_voltage = 325
+set vbat_warning_cell_voltage = 330
+set yaw_motors_reversed = ON
+set small_angle = 180
+set deadband = 1
+set yaw_deadband = 1
+set pid_process_denom = 4
+set osd_rssi_pos = 314
+set osd_link_quality_pos = 2392
+set osd_rssi_dbm_pos = 2360
+set osd_tim_1_pos = 2305
+set osd_tim_2_pos = 2433
+set osd_flymode_pos = 2457
+set osd_throttle_pos = 2425
+set osd_vtx_channel_pos = 59
+set osd_current_pos = 2336
+set osd_mah_drawn_pos = 2368
+set osd_craft_name_pos = 2444
+set osd_gps_speed_pos = 98
+set osd_gps_lon_pos = 1
+set osd_gps_lat_pos = 17
+set osd_gps_sats_pos = 66
+set osd_home_dir_pos = 79
+set osd_home_dist_pos = 88
+set osd_altitude_pos = 130
+set osd_warnings_pos = 2345
+set osd_avg_cell_voltage_pos = 2401
+set osd_disarmed_pos = 2314
+set osd_core_temp_pos = 33
+set osd_canvas_height = 13
+set debug_mode = DSHOT_RPM_ERRORS
+set vtx_band = 5
+set vtx_channel = 1
+set vtx_power = 4
+set vtx_low_power_disarm = ON
+set vtx_freq = 5658
+set vcd_video_system = NTSC
+set pinio_box = 255,255,255,255
+set flash_spi_bus = 0
+set expresslrs_uid = 206,62,28,80,40,100
+set craft_name = crux3
+
+profile 0
+
+# profile 0
+set iterm_relax = RPY
+set iterm_windup = 100
+set yaw_lowpass_hz = 0
+set p_pitch = 80
+set i_pitch = 100
+set d_pitch = 85
+set f_pitch = 140
+set p_roll = 85
+set i_roll = 100
+set d_roll = 85
+set f_roll = 140
+set p_yaw = 120
+set i_yaw = 100
+set f_yaw = 140
+set d_min_roll = 0
+set d_min_pitch = 0
+set feedforward_transition = 21
+
+profile 1
+
+# profile 1
+set p_pitch = 86
+set i_pitch = 90
+set d_pitch = 38
+set f_pitch = 95
+set p_roll = 82
+set i_roll = 85
+set d_roll = 35
+set f_roll = 90
+set p_yaw = 85
+set i_yaw = 90
+set f_yaw = 90
+set d_min_roll = 23
+set d_min_pitch = 25
+set simplified_pids_mode = OFF
+
+profile 2
+
+profile 3
+
+# restore original profile selection
+profile 1
+
+rateprofile 0
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+# restore original rateprofile selection
+rateprofile 1
+
+# save configuration
+save
+# 
