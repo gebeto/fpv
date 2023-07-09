@@ -3,7 +3,7 @@
 # diff all
 
 # version
-# Betaflight / STM32F411 (S411) 4.4.2 Jun  1 2023 / 09:11:27 (23d066d08) MSP API: 1.45
+# Betaflight / STM32F411 (S411) 4.4.2 Jun  1 2023 / 04:12:25 (23d066d08) MSP API: 1.45
 
 # config: YES
 
@@ -30,6 +30,7 @@ dma pin A10 NONE
 # feature
 feature -RX_SERIAL
 feature -ANTI_GRAVITY
+feature MOTOR_STOP
 feature RX_SPI
 
 # serial
@@ -47,7 +48,7 @@ aux 3 13 5 1900 2100 0 0
 aux 4 19 1 1900 2100 0 0
 aux 5 35 2 1900 2100 0 0
 aux 6 36 6 1900 2100 0 0
-aux 7 39 3 1900 2100 0 0
+aux 7 39 3 1400 1600 0 0
 
 # adjrange
 adjrange 0 0 1 900 1200 12 1 0 0
@@ -68,12 +69,17 @@ vtxtable powervalues 14 2 14 20 26
 vtxtable powerlabels 0 RCE 25 100 400
 
 # master
+set gyro_lpf1_static_hz = 0
 set dyn_notch_q = 120
+set gyro_lpf1_dyn_min_hz = 0
 set acc_calibration = 41,21,-5,1
+set rc_smoothing_auto_factor = 120
+set blackbox_device = NONE
 set dshot_bidir = ON
 set dshot_bitbang = AUTO
 set motor_pwm_protocol = DSHOT300
 set motor_poles = 12
+set vbat_max_cell_voltage = 440
 set vbat_min_cell_voltage = 325
 set vbat_warning_cell_voltage = 330
 set yaw_motors_reversed = ON
@@ -81,6 +87,7 @@ set small_angle = 180
 set deadband = 1
 set yaw_deadband = 1
 set pid_process_denom = 4
+set report_cell_voltage = ON
 set osd_rssi_pos = 314
 set osd_link_quality_pos = 2392
 set osd_rssi_dbm_pos = 2360
@@ -103,6 +110,7 @@ set osd_warnings_pos = 2345
 set osd_avg_cell_voltage_pos = 2401
 set osd_disarmed_pos = 2314
 set osd_core_temp_pos = 33
+set osd_canvas_width = 30
 set osd_canvas_height = 13
 set debug_mode = DSHOT_RPM_ERRORS
 set vtx_band = 5
@@ -136,6 +144,7 @@ set f_yaw = 140
 set d_min_roll = 0
 set d_min_pitch = 0
 set feedforward_transition = 21
+set simplified_pids_mode = OFF
 
 profile 1
 
@@ -153,6 +162,9 @@ set i_yaw = 90
 set f_yaw = 90
 set d_min_roll = 23
 set d_min_pitch = 25
+set feedforward_averaging = 2_POINT
+set feedforward_smooth_factor = 65
+set dyn_idle_min_rpm = 34
 set simplified_pids_mode = OFF
 
 profile 2
@@ -160,7 +172,7 @@ profile 2
 profile 3
 
 # restore original profile selection
-profile 1
+profile 0
 
 rateprofile 0
 
