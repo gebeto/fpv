@@ -25,14 +25,15 @@ beacon RX_LOST
 beacon RX_SET
 
 # aux
-aux 0 0 0 1900 2100 0 0
-aux 1 1 4 1550 1675 0 0
-aux 2 2 4 1300 1500 0 0
-aux 3 13 5 1900 2100 0 0
-aux 4 19 1 1900 2100 0 0
-aux 5 28 4 1125 1250 0 0
-aux 6 35 2 1900 2100 0 0
-aux 7 36 6 1900 2100 0 0
+aux 0 36 6 1900 2100 0 0
+aux 1 0 0 1900 2100 0 0
+aux 2 13 5 1900 2100 0 0
+aux 3 35 2 1900 2100 0 0
+aux 4 28 4 1125 1250 0 0
+aux 5 1 4 1550 1675 0 0
+aux 6 2 4 1300 1500 0 0
+aux 7 19 1 1900 2100 0 0
+aux 8 39 3 1400 1600 0 0
 
 # adjrange
 adjrange 0 0 1 900 1200 12 1 0 0
@@ -107,7 +108,17 @@ set name = Mobula7
 
 profile 1
 
-rateprofile 0
+rateprofile 2
+
+# rateprofile 2
+set rates_type = BETAFLIGHT
+set roll_rc_rate = 110
+set pitch_rc_rate = 110
+set yaw_rc_rate = 100
+set roll_srate = 75
+set pitch_srate = 75
+set yaw_srate = 70
+set tpa_breakpoint = 1250
 
 # end the command batch
 batch end
