@@ -1,9 +1,9 @@
-#$ TITLE: gebeto Jumper T-Pro Modes
+#$ TITLE: Jumper T-Pro Modes | gebeto
 #$ FIRMWARE_VERSION: 4.3
 #$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: MODES
 #$ STATUS: COMMUNITY
-#$ KEYWORDS: defaults, reset, mode, modes, adjustments, aux, switch
+#$ KEYWORDS: defaults, mode, modes, aux, switch
 #$ AUTHOR: gebeto
 #$ DESCRIPTION: Jumper T-Pro Modes | gebeto
 
