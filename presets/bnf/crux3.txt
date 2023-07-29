@@ -1,4 +1,10 @@
-#
+#$ TITLE: Crux3 defaults
+#$ FIRMWARE_VERSION: 4.4
+#$ CATEGORY: BNF
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: defaults
+#$ AUTHOR: gebeto
+
 
 # diff
 

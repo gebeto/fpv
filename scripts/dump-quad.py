@@ -31,7 +31,7 @@ if not name:
 	print("ERROR: Cant dump diff, please try again")
 	exit()
 
-open(f"configs/{name}.txt", "w").write(diff)
+open(f"presets/bnf/{name}.txt", "w").write(diff)
 
 ser.write(b'exit\n')
 ser.close()

@@ -1,4 +1,10 @@
-#
+#$ TITLE: Mobula7 defaults
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: BNF
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: defaults
+#$ AUTHOR: gebeto
+
 
 # diff
 
