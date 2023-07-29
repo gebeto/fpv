@@ -1,3 +1,12 @@
+#$ TITLE: gebeto Jumper T-Pro Modes
+#$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
+#$ CATEGORY: MODES
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: defaults, reset, mode, modes, adjustments, aux, switch
+#$ AUTHOR: gebeto
+#$ DESCRIPTION: gebeto Jumper T-Pro Modes
+
 # aux
 
 # preARM
@@ -20,6 +29,3 @@ aux 6 2 1 1400 1600 0 0
 
 osd disable
 aux 7 19 6 1900 2100 0 0
-
-
-save

@@ -1,3 +1,12 @@
+#$ TITLE: gebeto BOXER Modes
+#$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
+#$ CATEGORY: MODES
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: defaults, reset, mode, modes, adjustments, aux, switch
+#$ AUTHOR: gebeto
+#$ DESCRIPTION: gebeto BOXER Modes
+
 # aux
 
 # preARM
@@ -23,6 +32,3 @@ aux 7 19 1 1900 2100 0 0
 
 # vtx pit mode
 aux 8 39 3 1400 1600 0 0
-
-
-save
