@@ -5,7 +5,7 @@
 #$ STATUS: COMMUNITY
 #$ KEYWORDS: defaults, reset, mode, modes, adjustments, aux, switch
 #$ AUTHOR: gebeto
-#$ DESCRIPTION: gebeto Jumper T-Pro Modes
+#$ DESCRIPTION: Jumper T-Pro Modes | gebeto
 
 # aux
 

@@ -5,7 +5,7 @@
 #$ STATUS: COMMUNITY
 #$ KEYWORDS: defaults, reset, mode, modes, adjustments, aux, switch
 #$ AUTHOR: gebeto
-#$ DESCRIPTION: gebeto BOXER Modes
+#$ DESCRIPTION: BOXER Modes | gebeto
 
 # aux
 

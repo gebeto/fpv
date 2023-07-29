@@ -216,7 +216,7 @@
     },
     {
       "fullPath": "presets/modes/Boxer.txt",
-      "hash": "970fc57438c66aa8c9cfaa0c910e263f338e08899de65c932959a5832e8d5e29",
+      "hash": "be2a0e998d28f55d3d3d963529dfb3838eda53e0fe99aa5a906264ac2981950f",
       "title": "gebeto BOXER Modes",
       "firmware_version": [
         "4.3",
@@ -238,7 +238,7 @@
     },
     {
       "fullPath": "presets/modes/Jumper_T-Pro.txt",
-      "hash": "23cb0da846e9551b1bbbfc401cc80490cd4c2807c039dd1d976713031e5761e8",
+      "hash": "b75be2c28e0600a3f1df41118089e5346599260555c898c6065b76c16ce06804",
       "title": "gebeto Jumper T-Pro Modes",
       "firmware_version": [
         "4.3",
