@@ -213,6 +213,21 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/bnf/mobula7_factory_diff.txt",
+      "hash": "f779f8db794851e91c539daf2f7428359a282c6040bec0338ddcaad04eeb1af8",
+      "title": "Mobula7 factory defaults",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "BNF",
+      "status": "COMMUNITY",
+      "keywords": [
+        "defaults"
+      ],
+      "author": "gebeto",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/modes/Boxer.txt",
       "hash": "c245e34f533a6992e2805e25a93583663da0778aad2b5f8893d7574d7ddc58bf",
       "title": "BOXER Modes | gebeto",

@@ -1,0 +1,285 @@
+#$ TITLE: Mobula7 factory defaults
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: BNF
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: defaults
+#$ AUTHOR: gebeto
+
+
+# 
+
+# diff all
+###WARNING: NO CUSTOM DEFAULTS FOUND###
+
+# version
+# Betaflight / STM32F411SX1280 (S4SX) 4.3.1 Jul 13 2022 / 03:33:32 (8d4f005) MSP API: 1.44
+###ERROR IN diff: NO CONFIG FOUND###
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name CRAZYBEEF4SX1280
+manufacturer_id HAMO
+mcu_id 001900574831500220393153
+signature 
+
+# name: Mobula7 1S
+
+# resources
+resource BEEPER 1 C15
+resource MOTOR 1 B10
+resource MOTOR 2 B06
+resource MOTOR 3 B07
+resource MOTOR 4 B08
+resource PPM 1 A03
+resource PWM 1 A02
+resource PWM 2 A09
+resource PWM 3 A10
+resource LED_STRIP 1 A00
+resource SERIAL_TX 1 A09
+resource SERIAL_TX 2 A02
+resource SERIAL_RX 1 A10
+resource SERIAL_RX 2 A03
+resource LED 1 C13
+resource SPI_SCK 1 A05
+resource SPI_SCK 2 B13
+resource SPI_SCK 3 B03
+resource SPI_MISO 1 A06
+resource SPI_MISO 2 B14
+resource SPI_MISO 3 B04
+resource SPI_MOSI 1 A07
+resource SPI_MOSI 2 B15
+resource SPI_MOSI 3 B05
+resource ADC_BATT 1 B00
+resource ADC_CURR 1 B01
+resource FLASH_CS 1 A14
+resource OSD_CS 1 B12
+resource RX_SPI_CS 1 A15
+resource RX_SPI_EXTI 1 C14
+resource RX_SPI_BIND 1 B02
+resource RX_SPI_LED 1 B09
+resource RX_SPI_EXPRESSLRS_RESET 1 A08
+resource RX_SPI_EXPRESSLRS_BUSY 1 A13
+resource GYRO_EXTI 1 A01
+resource GYRO_CS 1 A04
+
+# timer
+timer A03 AF3
+# pin A03: TIM9 CH2 (AF3)
+timer B10 AF1
+# pin B10: TIM2 CH3 (AF1)
+timer B06 AF2
+# pin B06: TIM4 CH1 (AF2)
+timer B07 AF2
+# pin B07: TIM4 CH2 (AF2)
+timer B08 AF2
+# pin B08: TIM4 CH3 (AF2)
+timer A00 AF2
+# pin A00: TIM5 CH1 (AF2)
+timer A02 AF3
+# pin A02: TIM9 CH1 (AF3)
+timer A09 AF1
+# pin A09: TIM1 CH2 (AF1)
+timer A10 AF1
+# pin A10: TIM1 CH3 (AF1)
+
+# dma
+dma ADC 1 0
+# ADC 1: DMA2 Stream 0 Channel 0
+dma pin B10 0
+# pin B10: DMA1 Stream 1 Channel 3
+dma pin B06 0
+# pin B06: DMA1 Stream 0 Channel 2
+dma pin B07 0
+# pin B07: DMA1 Stream 3 Channel 2
+dma pin B08 0
+# pin B08: DMA1 Stream 7 Channel 2
+dma pin A00 0
+# pin A00: DMA1 Stream 2 Channel 6
+dma pin A09 0
+# pin A09: DMA2 Stream 6 Channel 0
+dma pin A10 0
+# pin A10: DMA2 Stream 6 Channel 0
+
+# feature
+feature SOFTSERIAL
+feature LED_STRIP
+feature OSD
+
+# serial
+serial 1 2048 115200 57600 0 115200
+
+# beacon
+beacon RX_LOST
+beacon RX_SET
+
+# aux
+aux 0 36 6 1900 2100 0 0
+aux 1 0 0 1900 2100 0 0
+aux 2 13 5 1900 2100 0 0
+aux 3 35 2 1900 2100 0 0
+aux 4 28 4 1125 1250 0 0
+aux 5 1 4 1550 1675 0 0
+aux 6 2 4 1300 1500 0 0
+aux 7 19 1 1900 2100 0 0
+aux 8 39 3 1400 1600 0 0
+
+# adjrange
+adjrange 0 0 1 900 1200 12 1 0 0
+adjrange 1 0 1 1200 1800 12 1 0 0
+adjrange 2 0 1 1800 2100 12 1 0 0
+
+# vtxtable
+vtxtable bands 6
+vtxtable channels 8
+vtxtable band 1 BOSCAM_A A FACTORY 5865 5845 5825 5805 5785 5765 5745 5725
+vtxtable band 2 BOSCAM_B B FACTORY 5733 5752 5771 5790 5809 5828 5847 5866
+vtxtable band 3 BOSCAM_E E FACTORY 5705 5685 5665    0 5885 5905    0    0
+vtxtable band 4 FATSHARK F FACTORY 5740 5760 5780 5800 5820 5840 5860 5880
+vtxtable band 5 RACEBAND R FACTORY 5658 5695 5732 5769 5806 5843 5880 5917
+vtxtable band 6 LOWRACE  L FACTORY 5333 5373 5413 5453 5493 5533 5573 5613
+vtxtable powerlevels 5
+vtxtable powervalues 10 2 14 20 26
+vtxtable powerlabels 0 RCE 25 100 400
+
+# master
+set gyro_lpf1_static_hz = 200
+set gyro_lpf2_static_hz = 250
+set gyro_lpf1_dyn_min_hz = 200
+set gyro_lpf1_dyn_max_hz = 550
+set acc_calibration = 13,-81,8,1
+set rx_spi_bus = 3
+set blackbox_device = SPIFLASH
+set dshot_idle_value = 1200
+set dshot_burst = AUTO
+set motor_pwm_protocol = DSHOT300
+set motor_poles = 12
+set vbat_max_cell_voltage = 440
+set vbat_min_cell_voltage = 290
+set vbat_warning_cell_voltage = 310
+set current_meter = ADC
+set battery_meter = ADC
+set ibata_scale = 470
+set beeper_inversion = ON
+set beeper_od = OFF
+set yaw_motors_reversed = ON
+set small_angle = 180
+set deadband = 1
+set yaw_deadband = 1
+set pid_process_denom = 4
+set simplified_gyro_filter = OFF
+set osd_warn_batt_not_full = OFF
+set osd_warn_batt_warning = OFF
+set osd_warn_esc_fail = OFF
+set osd_warn_core_temp = OFF
+set osd_rssi_pos = 314
+set osd_link_quality_pos = 2392
+set osd_rssi_dbm_pos = 2360
+set osd_tim_2_pos = 2433
+set osd_flymode_pos = 2457
+set osd_throttle_pos = 2425
+set osd_vtx_channel_pos = 2305
+set osd_current_pos = 2336
+set osd_mah_drawn_pos = 2368
+set osd_craft_name_pos = 2442
+set osd_warnings_pos = 2345
+set osd_avg_cell_voltage_pos = 2401
+set osd_disarmed_pos = 2314
+set osd_esc_rpm_pos = 161
+set osd_core_temp_pos = 2328
+set osd_stat_tim_1 = ON
+set osd_stat_max_spd = OFF
+set osd_stat_battery = ON
+set osd_stat_bbox = OFF
+set osd_stat_bb_no = OFF
+set system_hse_mhz = 8
+set debug_mode = RX_EXPRESSLRS_SPI
+set vtx_band = 3
+set vtx_channel = 2
+set vtx_power = 5
+set vtx_low_power_disarm = ON
+set vtx_freq = 5685
+set max7456_spi_bus = 2
+set pinio_box = 40,41,255,255
+set flash_spi_bus = 2
+set gyro_1_bustype = SPI
+set gyro_1_spibus = 1
+set gyro_1_sensor_align = CW90
+set gyro_1_align_yaw = 900
+set expresslrs_uid = 0,0,132,131,55,112
+set name = Mobula7 1S
+
+profile 0
+
+# profile 0
+set dterm_lpf1_dyn_min_hz = 84
+set dterm_lpf1_dyn_max_hz = 204
+set dterm_lpf1_static_hz = 150
+set dterm_lpf2_static_hz = 180
+set vbat_sag_compensation = 100
+set anti_gravity_gain = 4500
+set iterm_relax_cutoff = 20
+set yaw_lowpass_hz = 0
+set p_pitch = 116
+set i_pitch = 135
+set d_pitch = 77
+set f_pitch = 212
+set p_roll = 123
+set i_roll = 143
+set d_roll = 80
+set f_roll = 226
+set p_yaw = 123
+set i_yaw = 143
+set f_yaw = 226
+set d_min_roll = 80
+set d_min_pitch = 77
+set d_max_advance = 0
+set feedforward_jitter_factor = 5
+set feedforward_boost = 18
+set feedforward_max_rate_limit = 95
+set simplified_master_multiplier = 145
+set simplified_i_gain = 65
+set simplified_d_gain = 185
+set simplified_pi_gain = 190
+set simplified_dmax_gain = 0
+set simplified_feedforward_gain = 130
+set simplified_pitch_d_gain = 85
+set simplified_pitch_pi_gain = 90
+
+profile 1
+
+profile 2
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+rateprofile 1
+
+rateprofile 2
+
+# rateprofile 2
+set rates_type = BETAFLIGHT
+set roll_rc_rate = 110
+set pitch_rc_rate = 110
+set yaw_rc_rate = 100
+set roll_srate = 75
+set pitch_srate = 75
+set yaw_srate = 70
+set tpa_breakpoint = 1250
+
+rateprofile 3
+
+rateprofile 4
+
+rateprofile 5
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
+save
+# 
