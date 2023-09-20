@@ -183,7 +183,22 @@
       "priority": 0
     },
     {
-      "fullPath": "presets/bnf/Mobula7.txt",
+      "fullPath": "presets/bnf/BZHELYK.txt",
+      "hash": "d20b15ecadc5826e436e6b99344c9f9a64221a4ae5c38f160d84b83d88d84103",
+      "title": "BZHELYK defaults",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "BNF",
+      "status": "COMMUNITY",
+      "keywords": [
+        "defaults"
+      ],
+      "author": "gebeto",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/bnf/Mobula7_43.txt",
       "hash": "9ad8fb59c4726d4a82991b968e5d82d2d92cdb95cf2f0dc77bf1a3bb53dc7faa",
       "title": "Mobula7 defaults",
       "firmware_version": [
@@ -229,7 +244,7 @@
     },
     {
       "fullPath": "presets/modes/Boxer.txt",
-      "hash": "c245e34f533a6992e2805e25a93583663da0778aad2b5f8893d7574d7ddc58bf",
+      "hash": "2116959f930d2e0b2ff42d219daf2b24d8ade4e164ef2799101fa6fcb54f0335",
       "title": "BOXER Modes | gebeto",
       "firmware_version": [
         "4.3",
