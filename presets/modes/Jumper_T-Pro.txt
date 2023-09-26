@@ -27,5 +27,5 @@ aux 5 1 1 900 1100 0 0
 # horizon
 aux 6 2 1 1400 1600 0 0
 
-osd disable
+# osd disable
 aux 7 19 6 1900 2100 0 0
