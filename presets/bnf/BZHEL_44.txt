@@ -45,9 +45,6 @@ serial 1 2048 115200 57600 0 115200
 beacon RX_LOST
 beacon RX_SET
 
-# map
-map TAER1234
-
 # aux
 aux 0 36 6 1900 2100 0 0
 aux 1 0 0 1900 2100 0 0
@@ -137,13 +134,12 @@ set osd_core_temp_pos = 2328
 set osd_canvas_width = 30
 set osd_canvas_height = 13
 set debug_mode = DUAL_GYRO_SCALED
-set vtx_band = 5
-set vtx_channel = 8
-set vtx_power = 5
+set vtx_band = 4
+set vtx_channel = 1
+set vtx_power = 4
 set vtx_low_power_disarm = ON
-set vtx_freq = 5917
+set vtx_freq = 5740
 set expresslrs_uid = 234,47,67,219,15,43
-set expresslrs_switch_mode = HYBRID
 set rpm_filter_min_hz = 200
 set craft_name = Mobula8
 
