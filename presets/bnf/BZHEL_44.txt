@@ -1,5 +1,5 @@
-#$ TITLE: BZHEL 4.4 defaults (Mobula8)
-#$ FIRMWARE_VERSION: 4.4
+#$ TITLE: BZHEL better defaults (Mobula8)
+#$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: BNF
 #$ STATUS: COMMUNITY
 #$ KEYWORDS: defaults
@@ -87,6 +87,7 @@ set acc_calibration = 1,-38,27,1
 set rc_smoothing_auto_factor = 25
 set rc_smoothing_auto_factor_throttle = 25
 set blackbox_sample_rate = 1/2
+set blackbox_device = NONE
 set dshot_idle_value = 800
 set dshot_bidir = ON
 set motor_pwm_protocol = DSHOT300
