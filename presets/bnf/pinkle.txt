@@ -69,6 +69,7 @@ set dyn_notch_count = 1
 set dyn_notch_q = 500
 set gyro_lpf1_dyn_min_hz = 0
 set acc_calibration = -127,1,32,1
+set rc_smoothing_auto_factor = 120
 set serialrx_provider = CRSF
 set dshot_bidir = ON
 set motor_output_reordering = 1,0,2,3,4,5,6,7
@@ -84,6 +85,10 @@ set vtx_freq = 5740
 set craft_name = pinkle
 
 profile 0
+
+# profile 0
+set feedforward_averaging = 2_POINT
+set feedforward_smooth_factor = 65
 
 profile 1
 
