@@ -39,19 +39,18 @@ beacon RX_LOST
 beacon RX_SET
 
 # aux
-aux 0 36 6 1900 2100 0 0
+aux 0 36 4 1900 2100 0 0
 aux 1 0 0 1900 2100 0 0
-aux 2 13 5 1900 2100 0 0
+aux 2 13 3 1900 2100 0 0
 aux 3 35 2 1900 2100 0 0
-aux 4 35 2 1900 2100 0 0
-aux 5 1 7 900 1100 0 0
+aux 5 1 5 1200 1700 0 0
 aux 6 2 7 1900 2100 0 0
-aux 8 39 1 1400 1600 0 0
+aux 8 39 1 1400 2100 0 0
 
 # adjrange
-adjrange 0 0 3 900 1200 29 3 0 0
-adjrange 1 0 3 1200 1800 29 3 0 0
-adjrange 2 0 3 1800 2100 29 3 0 0
+adjrange 0 0 6 900 1200 29 6 0 0
+adjrange 1 0 6 1200 1800 29 6 0 0
+adjrange 2 0 6 1800 2100 29 6 0 0
 
 # vtxtable
 vtxtable bands 6
@@ -103,7 +102,7 @@ set osd_vtx_channel_pos = 2305
 set osd_current_pos = 2336
 set osd_mah_drawn_pos = 6464
 set osd_craft_name_pos = 6538
-set osd_warnings_pos = 6441
+set osd_warnings_pos = 14633
 set osd_avg_cell_voltage_pos = 6497
 set osd_disarmed_pos = 6410
 set osd_esc_rpm_pos = 161
@@ -193,22 +192,22 @@ profile 2
 # profile 2
 set profile_name = Factory
 set yaw_lowpass_hz = 0
-set p_pitch = 124
-set i_pitch = 144
-set d_pitch = 82
-set f_pitch = 226
-set p_roll = 132
-set i_roll = 153
-set d_roll = 86
-set f_roll = 241
-set p_yaw = 132
-set i_yaw = 153
-set f_yaw = 241
-set d_min_roll = 86
-set d_min_pitch = 82
+set p_pitch = 108
+set i_pitch = 106
+set d_pitch = 72
+set f_pitch = 197
+set p_roll = 115
+set i_roll = 112
+set d_roll = 74
+set f_roll = 210
+set p_yaw = 115
+set i_yaw = 112
+set f_yaw = 210
+set d_min_roll = 74
+set d_min_pitch = 72
 set dyn_idle_min_rpm = 67
-set simplified_master_multiplier = 155
-set simplified_i_gain = 65
+set simplified_master_multiplier = 135
+set simplified_i_gain = 55
 set simplified_d_gain = 185
 set simplified_pi_gain = 190
 set simplified_dmax_gain = 0
@@ -222,7 +221,7 @@ profile 3
 set profile_name = Defaults
 
 # restore original profile selection
-profile 1
+profile 2
 
 rateprofile 0
 
@@ -242,6 +241,6 @@ set yaw_srate = 70
 rateprofile 3
 
 # restore original rateprofile selection
-rateprofile 2
+rateprofile 0
 
 # save configuration
