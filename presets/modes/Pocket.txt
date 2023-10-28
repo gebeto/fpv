@@ -1,4 +1,4 @@
-#$ TITLE: BOXER Modes | gebeto
+#$ TITLE: Pocket Modes | gebeto
 #$ FIRMWARE_VERSION: 4.3
 #$ FIRMWARE_VERSION: 4.4
 #$ FIRMWARE_VERSION: 4.5
@@ -11,27 +11,27 @@
 # aux
 
 # preARM
-aux 0 36 6 1900 2100 0 0
+aux 0 36 4 1900 2100 0 0
 
 # ARM
 aux 1 0 0 1900 2100 0 0
 
 # beeper
-aux 2 13 5 1900 2100 0 0
+aux 2 13 3 1900 2100 0 0
 # flip after crash
 aux 3 35 2 1900 2100 0 0
 
 # air
 # aux 4 28 4 1125 1250 0 0
 # angle
-aux 5 1 7 900 1100 0 0
+aux 5 1 5 1200 1700 0 0
 # horizon
 aux 6 2 7 1900 2100 0 0
 
 # vtx pit mode
-aux 8 39 1 1400 1600 0 0
+aux 8 39 1 1400 2100 0 0
 
 # OSD adjustments
-adjrange 0 0 3 900 1200 29 3 0 0
-adjrange 1 0 3 1200 1800 29 3 0 0
-adjrange 2 0 3 1800 2100 29 3 0 0
+adjrange 0 0 6 900 1200 29 6 0 0
+adjrange 1 0 6 1200 1800 29 6 0 0
+adjrange 2 0 6 1800 2100 29 6 0 0
