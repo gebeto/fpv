@@ -1,5 +1,5 @@
 #$ TITLE: BZHEL better defaults (Mobula8)
-#$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: BNF
 #$ STATUS: COMMUNITY
 #$ KEYWORDS: defaults
@@ -46,18 +46,18 @@ beacon RX_LOST
 beacon RX_SET
 
 # aux
-aux 0 36 6 1900 2100 0 0
-aux 1 0 0 1900 2100 0 0
-aux 2 13 5 1900 2100 0 0
+aux 0 36 4 1900 2100 0 0
+aux 1 0 1 1400 1600 0 0
+aux 2 13 3 1900 2100 0 0
 aux 3 35 2 1900 2100 0 0
-aux 5 1 7 900 1100 0 0
-aux 6 2 7 1900 2100 0 0
-aux 8 39 1 1400 1600 0 0
+aux 5 1 5 1200 1700 0 0
+aux 6 2 5 1700 2100 0 0
+aux 7 39 0 1400 2100 0 0
 
 # adjrange
-adjrange 0 0 3 900 1200 29 3 0 0
-adjrange 1 0 3 1200 1800 29 3 0 0
-adjrange 2 0 3 1800 2100 29 3 0 0
+adjrange 0 0 6 900 1200 29 6 0 0
+adjrange 1 0 6 1200 1800 29 6 0 0
+adjrange 2 0 6 1800 2100 29 6 0 0
 
 # vtxtable
 vtxtable bands 6
@@ -74,10 +74,10 @@ vtxtable powerlabels 0 RCE 25 100 400
 
 # master
 set gyro_lpf1_static_hz = 200
-set gyro_lpf2_static_hz = 250
+set gyro_lpf2_static_hz = 0
 set dyn_notch_q = 500
 set dyn_notch_min_hz = 150
-set gyro_lpf1_dyn_min_hz = 200
+set gyro_lpf1_dyn_min_hz = 300
 set gyro_lpf1_dyn_max_hz = 550
 set acc_lpf_hz = 10
 set acc_calibration = 1,-38,27,1
@@ -131,6 +131,7 @@ set osd_avg_cell_voltage_pos = 6529
 set osd_disarmed_pos = 6410
 set osd_esc_rpm_pos = 161
 set osd_core_temp_pos = 2328
+set osd_profile = 2
 set osd_canvas_width = 30
 set osd_canvas_height = 13
 set debug_mode = DUAL_GYRO_SCALED
@@ -146,11 +147,9 @@ set craft_name = Mobula8
 profile 0
 
 # profile 0
-set dterm_lpf1_dyn_min_hz = 60
-set dterm_lpf1_dyn_max_hz = 145
-set dterm_lpf1_static_hz = 150
-set dterm_lpf2_static_hz = 128
+set profile_name = Default1
 set vbat_sag_compensation = 100
+set anti_gravity_gain = 45
 set iterm_relax_cutoff = 25
 set yaw_lowpass_hz = 0
 set p_pitch = 56
@@ -171,6 +170,7 @@ set thrust_linear = 20
 set feedforward_jitter_factor = 5
 set feedforward_boost = 18
 set feedforward_max_rate_limit = 95
+set simplified_pids_mode = OFF
 set simplified_master_multiplier = 120
 set simplified_i_gain = 65
 set simplified_d_gain = 120
@@ -183,12 +183,67 @@ set tpa_breakpoint = 1250
 
 profile 1
 
+# profile 1
+set profile_name = Default2
+set dterm_lpf1_dyn_min_hz = 101
+set dterm_lpf1_dyn_max_hz = 202
+set dterm_lpf1_static_hz = 101
+set dterm_lpf2_static_hz = 202
+set anti_gravity_gain = 35
+set iterm_relax_cutoff = 25
+set p_pitch = 56
+set i_pitch = 100
+set d_pitch = 52
+set f_pitch = 149
+set p_roll = 53
+set i_roll = 95
+set d_roll = 46
+set f_roll = 143
+set p_yaw = 53
+set i_yaw = 95
+set f_yaw = 143
+set d_min_roll = 43
+set d_min_pitch = 48
+set thrust_linear = 20
+set simplified_master_multiplier = 120
+set simplified_d_gain = 120
+set simplified_dmax_gain = 20
+set simplified_dterm_filter_multiplier = 135
+
 profile 2
+
+# profile 2
+set profile_name = Default3
+set dterm_lpf1_dyn_min_hz = 0
+set dterm_lpf1_dyn_max_hz = 0
+set dterm_lpf1_static_hz = 108
+set dterm_lpf2_static_hz = 217
+set anti_gravity_gain = 35
+set p_pitch = 43
+set i_pitch = 77
+set d_pitch = 35
+set f_pitch = 129
+set p_roll = 35
+set i_roll = 63
+set d_roll = 28
+set f_roll = 108
+set p_yaw = 35
+set i_yaw = 63
+set f_yaw = 108
+set d_min_roll = 28
+set d_min_pitch = 35
+set simplified_d_gain = 95
+set simplified_pi_gain = 80
+set simplified_dmax_gain = 0
+set simplified_feedforward_gain = 90
+set simplified_pitch_d_gain = 110
+set simplified_pitch_pi_gain = 115
+set simplified_dterm_filter = OFF
 
 profile 3
 
 # restore original profile selection
-profile 0
+profile 2
 
 rateprofile 0
 
@@ -211,6 +266,6 @@ set yaw_srate = 56
 rateprofile 3
 
 # restore original rateprofile selection
-rateprofile 1
+rateprofile 0
 
 # save configuration
