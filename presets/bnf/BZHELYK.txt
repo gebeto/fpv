@@ -39,13 +39,13 @@ beacon RX_LOST
 beacon RX_SET
 
 # aux
-aux 0 36 4 1900 2100 0 0
-aux 1 0 0 1900 2100 0 0
-aux 2 13 3 1900 2100 0 0
-aux 3 35 2 1900 2100 0 0
-aux 5 1 5 1200 1700 0 0
-aux 6 2 7 1900 2100 0 0
-aux 8 39 1 1400 2100 0 0
+aux 0 0 1 1400 1600 0 0
+aux 1 1 5 1200 1700 0 0
+aux 2 2 5 1700 2100 0 0
+aux 3 13 3 1900 2100 0 0
+aux 4 35 2 1900 2100 0 0
+aux 5 36 4 1900 2100 0 0
+aux 6 39 0 1400 2100 0 0
 
 # adjrange
 adjrange 0 0 6 900 1200 29 6 0 0
@@ -95,19 +95,20 @@ set report_cell_voltage = ON
 set osd_rssi_pos = 314
 set osd_link_quality_pos = 2392
 set osd_rssi_dbm_pos = 2360
-set osd_tim_2_pos = 6529
+set osd_tim_2_pos = 6497
 set osd_flymode_pos = 6553
 set osd_throttle_pos = 2425
 set osd_vtx_channel_pos = 2305
 set osd_current_pos = 2336
-set osd_mah_drawn_pos = 6464
-set osd_craft_name_pos = 6538
-set osd_warnings_pos = 14633
-set osd_avg_cell_voltage_pos = 6497
-set osd_disarmed_pos = 6410
+set osd_mah_drawn_pos = 6521
+set osd_craft_name_pos = 6540
+set osd_warnings_pos = 14601
+set osd_avg_cell_voltage_pos = 6529
+set osd_disarmed_pos = 6378
 set osd_esc_rpm_pos = 161
 set osd_core_temp_pos = 2328
 set osd_profile_name_pos = 225
+set osd_profile = 2
 set osd_canvas_height = 13
 set debug_mode = RX_EXPRESSLRS_SPI
 set vtx_band = 4
@@ -127,6 +128,7 @@ set dterm_lpf1_dyn_max_hz = 125
 set dterm_lpf1_static_hz = 0
 set dterm_lpf2_static_hz = 0
 set vbat_sag_compensation = 100
+set anti_gravity_gain = 35
 set p_pitch = 116
 set i_pitch = 135
 set d_pitch = 77
@@ -161,6 +163,7 @@ profile 1
 # profile 1
 set profile_name = Infinity
 set vbat_sag_compensation = 80
+set anti_gravity_gain = 35
 set iterm_relax = RPY
 set iterm_relax_cutoff = 25
 set throttle_boost = 0
@@ -191,6 +194,7 @@ profile 2
 
 # profile 2
 set profile_name = Factory
+set anti_gravity_gain = 35
 set yaw_lowpass_hz = 0
 set p_pitch = 108
 set i_pitch = 106
