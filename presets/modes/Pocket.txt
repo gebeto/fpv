@@ -6,7 +6,7 @@
 #$ STATUS: COMMUNITY
 #$ KEYWORDS: defaults, mode, modes, aux, switch
 #$ AUTHOR: gebeto
-#$ DESCRIPTION: BOXER Modes | gebeto
+#$ DESCRIPTION: Pocket Modes | gebeto
 
 # aux
 

@@ -134,7 +134,8 @@
   "uniqueValues": {
     "firmware_version": [
       "4.3",
-      "4.4"
+      "4.4",
+      "4.5"
     ],
     "category": [
       "BNF",
@@ -183,8 +184,23 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/bnf/BZHEL.txt",
+      "hash": "962d1081d831b6c4e895edd51842108a267afda28aa0239e3963f90134ce34fa",
+      "title": "BZHEL better defaults (Mobula8)",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "BNF",
+      "status": "COMMUNITY",
+      "keywords": [
+        "defaults"
+      ],
+      "author": "gebeto",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/bnf/BZHELYK.txt",
-      "hash": "d20b15ecadc5826e436e6b99344c9f9a64221a4ae5c38f160d84b83d88d84103",
+      "hash": "96850ae5763247458551e013fb02dfb29d06bfbb39f44c203aa301730f6754d3",
       "title": "BZHELYK defaults",
       "firmware_version": [
         "4.4"
@@ -243,12 +259,28 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/bnf/pinkle.txt",
+      "hash": "b16afb5dabba5479a500230d75d8705f39233d5dad22e3eddd5ee30d6ea97a5f",
+      "title": "Pinkle defaults (AOS 3.5)",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "COMMUNITY",
+      "keywords": [
+        "defaults"
+      ],
+      "author": "gebeto",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/modes/Boxer.txt",
-      "hash": "2116959f930d2e0b2ff42d219daf2b24d8ade4e164ef2799101fa6fcb54f0335",
+      "hash": "d5f5e5f9d9667950dc9952c85c5d59e43c38b6ec279e6d0a921700b6127322a4",
       "title": "BOXER Modes | gebeto",
       "firmware_version": [
         "4.3",
-        "4.4"
+        "4.4",
+        "4.5"
       ],
       "category": "MODES",
       "status": "COMMUNITY",
@@ -264,11 +296,33 @@
     },
     {
       "fullPath": "presets/modes/Jumper_T-Pro.txt",
-      "hash": "00ffbb92f78c1d095174277a56eb0c7c8c1bacfaf35ca1b2ce401a81bd4350c9",
+      "hash": "fcca2c4e7f208de9efb5a9ebef6260433b05d0e835ee1f7557e9d46a9e711fd2",
       "title": "Jumper T-Pro Modes | gebeto",
       "firmware_version": [
         "4.3",
-        "4.4"
+        "4.4",
+        "4.5"
+      ],
+      "category": "MODES",
+      "status": "COMMUNITY",
+      "keywords": [
+        "defaults",
+        "mode",
+        "modes",
+        "aux",
+        "switch"
+      ],
+      "author": "gebeto",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/modes/Pocket.txt",
+      "hash": "8a5c09e8d53db93884dddba629ce5727002f06df9171f90896ea3d3aa544a206",
+      "title": "Pocket Modes | gebeto",
+      "firmware_version": [
+        "4.3",
+        "4.4",
+        "4.5"
       ],
       "category": "MODES",
       "status": "COMMUNITY",
