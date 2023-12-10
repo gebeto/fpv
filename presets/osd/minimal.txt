@@ -1,0 +1,15 @@
+#$ TITLE: Drochilo defaults
+#$ FIRMWARE_VERSION: 4.4
+#$ CATEGORY: OSD
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: defaults, OSD
+#$ AUTHOR: gebeto
+
+
+set osd_vbat_pos = 2081
+set osd_flymode_pos = 2133
+set osd_mah_drawn_pos = 6232
+set osd_craft_name_pos = 2101
+set osd_warnings_pos = 14602
+set osd_avg_cell_voltage_pos = 6209
+set osd_canvas_height = 16

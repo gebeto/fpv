@@ -139,7 +139,8 @@
     ],
     "category": [
       "BNF",
-      "MODES"
+      "MODES",
+      "OSD"
     ],
     "author": [
       "gebeto"
@@ -149,6 +150,7 @@
       "defaults",
       "mode",
       "modes",
+      "OSD",
       "switch"
     ]
   },
@@ -202,6 +204,21 @@
       "fullPath": "presets/bnf/BZHELYK.txt",
       "hash": "96850ae5763247458551e013fb02dfb29d06bfbb39f44c203aa301730f6754d3",
       "title": "BZHELYK defaults",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "BNF",
+      "status": "COMMUNITY",
+      "keywords": [
+        "defaults"
+      ],
+      "author": "gebeto",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/bnf/Drochilo_20231210_212502.txt",
+      "hash": "d27b5a0a490e6c7d027d655a73340a4f6cf048a42d558059a6ce4c7561b89ebf",
+      "title": "Drochilo defaults",
       "firmware_version": [
         "4.4"
       ],
@@ -332,6 +349,22 @@
         "modes",
         "aux",
         "switch"
+      ],
+      "author": "gebeto",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/osd/minimal.txt",
+      "hash": "1ceda68da7bef1b240d3129f7b5d89f2196d4dc17f7408a0abd7975061ef3952",
+      "title": "Drochilo defaults",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "OSD",
+      "status": "COMMUNITY",
+      "keywords": [
+        "defaults",
+        "OSD"
       ],
       "author": "gebeto",
       "priority": 0
