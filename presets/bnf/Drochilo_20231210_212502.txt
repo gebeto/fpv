@@ -71,7 +71,7 @@ set osd_mah_drawn_pos = 6232
 set osd_craft_name_pos = 2101
 set osd_warnings_pos = 14602
 set osd_avg_cell_voltage_pos = 6209
-set osd_canvas_height = 16
+set osd_canvas_height = 13
 set debug_mode = GYRO_SCALED
 set vtx_band = 1
 set vtx_channel = 1
@@ -82,11 +82,13 @@ set craft_name = DROCHILO
 profile 0
 
 # profile 0
+set profile_name = 4s
 set auto_profile_cell_count = 4
 
 profile 1
 
 # profile 1
+set profile_name = 6s
 set motor_output_limit = 64
 set auto_profile_cell_count = 6
 
