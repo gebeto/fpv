@@ -1,5 +1,5 @@
 #$ TITLE: Drochilo defaults
-#$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: BNF
 #$ STATUS: COMMUNITY
 #$ KEYWORDS: defaults
@@ -26,9 +26,6 @@ mcu_id 0022003b3033511436383634
 signature 
 
 # name: DROCHILO
-
-# feature
-feature -TELEMETRY
 
 # serial
 serial 4 0 115200 57600 0 115200
