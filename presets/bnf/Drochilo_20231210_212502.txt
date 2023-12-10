@@ -28,16 +28,17 @@ signature
 # name: DROCHILO
 
 # serial
+serial 0 8192 115200 57600 0 115200
 serial 4 0 115200 57600 0 115200
 
 # aux
-aux 0 36 4 1900 2100 0 0
-aux 1 0 1 1400 1600 0 0
-aux 2 13 3 1900 2100 0 0
-aux 3 35 2 1900 2100 0 0
-aux 5 1 5 1200 1700 0 0
-aux 6 2 5 1700 2100 0 0
-aux 7 39 0 1400 2100 0 0
+aux 0 0 1 1400 1600 0 0
+aux 1 1 5 1200 1700 0 0
+aux 2 2 5 1700 2100 0 0
+aux 3 13 3 1900 2100 0 0
+aux 4 35 2 1900 2100 0 0
+aux 5 36 4 1900 2100 0 0
+aux 6 39 0 1400 2100 0 0
 
 # adjrange
 adjrange 0 0 6 900 1200 29 6 0 0
@@ -64,10 +65,12 @@ set dshot_bidir = ON
 set motor_pwm_protocol = DSHOT300
 set yaw_motors_reversed = ON
 set small_angle = 180
-set osd_vbat_pos = 2454
-set osd_mah_drawn_pos = 6496
-set osd_craft_name_pos = 2442
-set osd_avg_cell_voltage_pos = 6529
+set osd_vbat_pos = 2081
+set osd_flymode_pos = 2133
+set osd_mah_drawn_pos = 6232
+set osd_craft_name_pos = 2101
+set osd_warnings_pos = 14602
+set osd_avg_cell_voltage_pos = 6209
 set osd_canvas_height = 13
 set debug_mode = GYRO_SCALED
 set vtx_band = 1
