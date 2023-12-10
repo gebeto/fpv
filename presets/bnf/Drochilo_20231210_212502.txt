@@ -1,0 +1,106 @@
+#$ TITLE: Drochilo defaults
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: BNF
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: defaults
+#$ AUTHOR: gebeto
+
+
+defaults nosave
+
+
+# version
+# Betaflight / SPEEDYBEEF405V3 (SBF4) 4.3.2 Apr  7 2023 / 03:15:27 (f156481e9) MSP API: 1.44
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name SPEEDYBEEF405V3
+mcu_id 0022003b3033511436383634
+signature 
+
+# name: Drochilo
+
+# feature
+feature -TELEMETRY
+
+# serial
+serial 4 0 115200 57600 0 115200
+
+# aux
+aux 0 36 4 1900 2100 0 0
+aux 1 0 1 1400 1600 0 0
+aux 2 13 3 1900 2100 0 0
+aux 3 35 2 1900 2100 0 0
+aux 5 1 5 1200 1700 0 0
+aux 6 2 5 1700 2100 0 0
+aux 7 39 0 1400 2100 0 0
+
+# adjrange
+adjrange 0 0 6 900 1200 29 6 0 0
+adjrange 1 0 6 1200 1800 29 6 0 0
+adjrange 2 0 6 1800 2100 29 6 0 0
+
+# vtxtable
+vtxtable bands 4
+vtxtable channels 8
+vtxtable band 1 BOSCAM_A A CUSTOM  5865 5845 5825 5805 5785 5765 5745    0
+vtxtable band 2 BOSCAM_B B CUSTOM  5733 5752 5771 5790 5809 5828 5847 5866
+vtxtable band 3 FATSHARK F CUSTOM  5740 5760 5780 5800 5820 5840 5860    0
+vtxtable band 4 RACEBAND R CUSTOM     0    0    0 5769 5806 5843    0    0
+vtxtable powerlevels 5
+vtxtable powervalues 25 200 400 600 600
+vtxtable powerlabels 25 200 400 800 800
+
+# master
+set dyn_notch_count = 1
+set dyn_notch_q = 500
+set acc_calibration = -55,-23,-5,1
+set serialrx_provider = CRSF
+set dshot_bidir = ON
+set yaw_motors_reversed = ON
+set osd_vbat_pos = 2454
+set osd_mah_drawn_pos = 6496
+set osd_craft_name_pos = 2442
+set osd_avg_cell_voltage_pos = 6529
+set vtx_band = 1
+set vtx_channel = 1
+set vtx_power = 1
+set vtx_freq = 5865
+set name = Drochilo
+
+profile 0
+
+# profile 0
+set auto_profile_cell_count = 4
+
+profile 1
+
+# profile 1
+set motor_output_limit = 64
+set auto_profile_cell_count = 6
+
+profile 2
+
+# restore original profile selection
+profile 1
+
+rateprofile 0
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+rateprofile 4
+
+rateprofile 5
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
