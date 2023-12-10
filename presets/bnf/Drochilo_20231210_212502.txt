@@ -10,7 +10,9 @@ defaults nosave
 
 
 # version
-# Betaflight / SPEEDYBEEF405V3 (SBF4) 4.3.2 Apr  7 2023 / 03:15:27 (f156481e9) MSP API: 1.44
+# Betaflight / STM32F405 (S405) 4.4.3 Nov 17 2023 / 16:32:34 (738127e7e) MSP API: 1.45
+
+# config: YES
 
 # start the command batch
 batch start
@@ -19,10 +21,11 @@ batch start
 defaults nosave
 
 board_name SPEEDYBEEF405V3
+manufacturer_id SPBE
 mcu_id 0022003b3033511436383634
 signature 
 
-# name: Drochilo
+# name: DROCHILO
 
 # feature
 feature -TELEMETRY
@@ -59,18 +62,22 @@ vtxtable powerlabels 25 200 400 800 800
 set dyn_notch_count = 1
 set dyn_notch_q = 500
 set acc_calibration = -55,-23,-5,1
-set serialrx_provider = CRSF
+set blackbox_sample_rate = 1/2
 set dshot_bidir = ON
+set motor_pwm_protocol = DSHOT300
 set yaw_motors_reversed = ON
+set small_angle = 180
 set osd_vbat_pos = 2454
 set osd_mah_drawn_pos = 6496
 set osd_craft_name_pos = 2442
 set osd_avg_cell_voltage_pos = 6529
+set osd_canvas_height = 13
+set debug_mode = GYRO_SCALED
 set vtx_band = 1
 set vtx_channel = 1
 set vtx_power = 1
 set vtx_freq = 5865
-set name = Drochilo
+set craft_name = DROCHILO
 
 profile 0
 
@@ -85,8 +92,10 @@ set auto_profile_cell_count = 6
 
 profile 2
 
+profile 3
+
 # restore original profile selection
-profile 1
+profile 0
 
 rateprofile 0
 
@@ -95,10 +104,6 @@ rateprofile 1
 rateprofile 2
 
 rateprofile 3
-
-rateprofile 4
-
-rateprofile 5
 
 # restore original rateprofile selection
 rateprofile 0
