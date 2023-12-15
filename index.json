@@ -217,7 +217,7 @@
     },
     {
       "fullPath": "presets/bnf/Drochilo_20231210_212502.txt",
-      "hash": "d27b5a0a490e6c7d027d655a73340a4f6cf048a42d558059a6ce4c7561b89ebf",
+      "hash": "953b24b0929df0f6a8b4822fefd4859b68ff23cc3abb8fc42d9a1c39a4cfbfa6",
       "title": "Drochilo defaults",
       "firmware_version": [
         "4.4"
@@ -236,6 +236,21 @@
       "title": "Mobula7 defaults",
       "firmware_version": [
         "4.3"
+      ],
+      "category": "BNF",
+      "status": "COMMUNITY",
+      "keywords": [
+        "defaults"
+      ],
+      "author": "gebeto",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/bnf/babyape_v2.txt",
+      "hash": "f1c53cbaa9b5264830370174214f4e4b69853b5bbfefa11503ecb18b6bda44ce",
+      "title": "Babyape v2 defaults",
+      "firmware_version": [
+        "4.4"
       ],
       "category": "BNF",
       "status": "COMMUNITY",
@@ -355,8 +370,8 @@
     },
     {
       "fullPath": "presets/osd/minimal.txt",
-      "hash": "1ceda68da7bef1b240d3129f7b5d89f2196d4dc17f7408a0abd7975061ef3952",
-      "title": "Drochilo defaults",
+      "hash": "5cd936f1fd01561c8531ed21eabd917e22049e136bf45adcf764bc513ed83b6f",
+      "title": "Minimal OSD",
       "firmware_version": [
         "4.4"
       ],
