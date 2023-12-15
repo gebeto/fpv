@@ -10,7 +10,7 @@ defaults nosave
 
 
 # version
-# Betaflight / STM32F411 (S411) 4.2.5 Nov 22 2020 / 18:38:45 (afdac08b3) MSP API: 1.43
+# Betaflight / STM32F411 (S411) 4.4.3 Nov 18 2023 / 01:58:24 (738127e7e) MSP API: 1.45
 
 # config: YES
 
@@ -37,13 +37,13 @@ serial 1 2048 115200 57600 0 115200
 led 0 9,5::CB:4
 
 # aux
-aux 0 36 4 1900 2100 0 0
-aux 1 0 1 1400 1600 0 0
-aux 2 13 3 1900 2100 0 0
-aux 3 35 2 1900 2100 0 0
-aux 5 1 5 1200 1700 0 0
-aux 6 2 5 1700 2100 0 0
-aux 7 39 0 1400 2100 0 0
+aux 0 0 1 1400 1600 0 0
+aux 1 1 5 1200 1700 0 0
+aux 2 2 5 1700 2100 0 0
+aux 3 13 3 1900 2100 0 0
+aux 4 35 2 1900 2100 0 0
+aux 5 36 4 1900 2100 0 0
+aux 6 39 0 1400 2100 0 0
 
 # adjrange
 adjrange 0 0 6 900 1200 29 6 0 0
@@ -64,23 +64,27 @@ vtxtable powervalues 0 1 2
 vtxtable powerlabels 25 100 200
 
 # master
+set dyn_notch_count = 1
+set dyn_notch_q = 500
 set acc_calibration = -111,-37,135,1
 set min_check = 1100
-set serialrx_provider = CRSF
-set blackbox_device = NONE
 set dshot_idle_value = 300
 set dshot_bidir = ON
+set motor_pwm_protocol = DSHOT300
 set motor_poles = 12
 set current_meter = NONE
-set osd_vbat_pos = 2455
+set osd_vbat_pos = 2423
 set osd_tim_2_pos = 2434
 set osd_craft_name_pos = 2442
+set osd_avg_cell_voltage_pos = 6551
+set osd_canvas_width = 30
+set osd_canvas_height = 13
 set vtx_band = 1
 set vtx_channel = 1
 set vtx_power = 3
 set vtx_freq = 5865
 set gyro_1_align_yaw = 1800
-set name = DarwinFPV
+set craft_name = DarwinFPV
 
 profile 0
 
@@ -92,8 +96,10 @@ profile 2
 set d_pitch = 45
 set d_roll = 45
 
+profile 3
+
 # restore original profile selection
-profile 2
+profile 0
 
 rateprofile 0
 
@@ -102,10 +108,6 @@ rateprofile 1
 rateprofile 2
 
 rateprofile 3
-
-rateprofile 4
-
-rateprofile 5
 
 # restore original rateprofile selection
 rateprofile 0
