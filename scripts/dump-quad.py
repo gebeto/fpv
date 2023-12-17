@@ -1,10 +1,26 @@
 import time
+
 import serial
+import serial.tools.list_ports
+
+port = None
+ports = serial.tools.list_ports.comports()
+for _port in ports:
+  if "Betaflight" in _port.description:
+    port = _port
+    break
+
+
+if not port:
+  print(" >>> Port not found")
+  exit()
+
 
 ser = serial.Serial(
-	'/dev/tty.usbmodem0x80000001',
-	115200,
+  port.device,
+  115200,
 )
+
 
 def _exec(command = '#', timeout = 3):
 	ser.write((command + '\n').encode())
@@ -31,7 +47,16 @@ if not name:
 	print("ERROR: Cant dump diff, please try again")
 	exit()
 
-open(f"presets/bnf/{name}.txt", "w").write(diff)
+open(f"presets/bnf/{name}.txt", "w").write(f"""#$ TITLE: {name} defaults
+#$ FIRMWARE_VERSION: 4.4
+#$ CATEGORY: BNF
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: defaults
+#$ AUTHOR: gebeto
+
+
+{diff}
+""")
 
 ser.write(b'exit\n')
 ser.close()
