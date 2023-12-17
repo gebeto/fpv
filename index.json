@@ -216,6 +216,21 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/bnf/Bibek.txt",
+      "hash": "f47295ad26a1f06e9e71f334501b77c64e74fffcf58ae74850d8acd2a7ca00b4",
+      "title": "BIBEK defaults",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "BNF",
+      "status": "COMMUNITY",
+      "keywords": [
+        "defaults"
+      ],
+      "author": "gebeto",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/bnf/Drochilo_20231210_212502.txt",
       "hash": "953b24b0929df0f6a8b4822fefd4859b68ff23cc3abb8fc42d9a1c39a4cfbfa6",
       "title": "Drochilo defaults",
