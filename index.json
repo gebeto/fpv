@@ -261,6 +261,21 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/bnf/Mobula8.txt",
+      "hash": "15be3a49cf257a3a17532d24a8b2343ae5938592c2dc176d2c41e21a46dadf25",
+      "title": "Mobula8 defaults",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "BNF",
+      "status": "COMMUNITY",
+      "keywords": [
+        "defaults"
+      ],
+      "author": "gebeto",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/bnf/babyape_v2.txt",
       "hash": "0d91fc07e39e09503cb29ca5d07a75a89b5a5da095c8a5a4aee3a36814cf3d5e",
       "title": "Babyape v2 defaults",
