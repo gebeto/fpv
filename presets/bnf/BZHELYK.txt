@@ -6,8 +6,9 @@
 #$ AUTHOR: gebeto
 
 
-defaults nosave
+#
 
+# diff all
 
 # version
 # Betaflight / STM32F411 (S411) 4.4.2 Jun  1 2023 / 09:11:27 (23d066d08) MSP API: 1.45
@@ -111,11 +112,11 @@ set osd_profile_name_pos = 225
 set osd_profile = 2
 set osd_canvas_height = 13
 set debug_mode = RX_EXPRESSLRS_SPI
-set vtx_band = 4
+set vtx_band = 1
 set vtx_channel = 1
 set vtx_power = 4
 set vtx_low_power_disarm = ON
-set vtx_freq = 5740
+set vtx_freq = 5865
 set expresslrs_uid = 234,47,67,219,15,43
 set craft_name = BZHELYK
 
@@ -229,7 +230,22 @@ profile 2
 
 rateprofile 0
 
+# rateprofile 0
+set rateprofile_name = default
+
 rateprofile 1
+
+# rateprofile 1
+set rateprofile_name = cinema
+set roll_rc_rate = 1
+set pitch_rc_rate = 1
+set yaw_rc_rate = 1
+set roll_expo = 54
+set pitch_expo = 54
+set yaw_expo = 54
+set roll_srate = 100
+set pitch_srate = 100
+set yaw_srate = 70
 
 rateprofile 2
 
@@ -245,6 +261,8 @@ set yaw_srate = 70
 rateprofile 3
 
 # restore original rateprofile selection
-rateprofile 0
+rateprofile 1
 
 # save configuration
+save
+# 
