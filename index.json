@@ -202,7 +202,7 @@
     },
     {
       "fullPath": "presets/bnf/BZHELYK.txt",
-      "hash": "96850ae5763247458551e013fb02dfb29d06bfbb39f44c203aa301730f6754d3",
+      "hash": "ebca9ed7259ef07f5baee206637e388bad550b6858e709712d7e4628f8c6149a",
       "title": "BZHELYK defaults",
       "firmware_version": [
         "4.4"
@@ -217,10 +217,10 @@
     },
     {
       "fullPath": "presets/bnf/Bibek.txt",
-      "hash": "bfc045e101a8e4625e96485e4340e952273f449d16d5f4cd35c0521b436db45c",
+      "hash": "5fa82e39defcae237053dfa9995d9f5bba4a73bd3b2fae2f4c2f7d6230e01735",
       "title": "Bibek defaults",
       "firmware_version": [
-        "4.3"
+        "4.4"
       ],
       "category": "BNF",
       "status": "COMMUNITY",
