@@ -75,8 +75,8 @@ set motor_pwm_protocol = DSHOT300
 set motor_poles = 12
 set align_board_yaw = 90
 set vbat_max_cell_voltage = 440
-set vbat_min_cell_voltage = 300
-set vbat_warning_cell_voltage = 310
+set vbat_min_cell_voltage = 310
+set vbat_warning_cell_voltage = 340
 set yaw_motors_reversed = ON
 set small_angle = 180
 set pid_process_denom = 4
@@ -85,26 +85,28 @@ set osd_warn_batt_not_full = OFF
 set osd_warn_batt_warning = OFF
 set osd_warn_esc_fail = OFF
 set osd_warn_core_temp = OFF
+set osd_tim1 = 30721
+set osd_tim2 = 46081
+###ERROR IN diff: CORRUPTED CONFIG: osd_tim2 = 46081###
 set osd_rssi_pos = 314
 set osd_link_quality_pos = 2392
 set osd_rssi_dbm_pos = 2360
-set osd_tim_2_pos = 2433
-set osd_flymode_pos = 2457
+set osd_tim_2_pos = 6529
+set osd_flymode_pos = 6553
 set osd_throttle_pos = 2425
 set osd_vtx_channel_pos = 2101
 set osd_current_pos = 2336
 set osd_mah_drawn_pos = 2368
 set osd_craft_name_pos = 2442
-set osd_warnings_pos = 2345
-set osd_avg_cell_voltage_pos = 2401
-set osd_disarmed_pos = 2314
+set osd_warnings_pos = 14633
+set osd_avg_cell_voltage_pos = 6497
+set osd_disarmed_pos = 6410
 set osd_core_temp_pos = 2082
 set osd_stat_tim_1 = ON
 set osd_stat_max_spd = OFF
 set osd_stat_battery = ON
 set osd_stat_bbox = OFF
 set osd_stat_bb_no = OFF
-set osd_profile = 2
 set vtx_band = 1
 set vtx_channel = 1
 set vtx_power = 5
@@ -193,7 +195,7 @@ rateprofile 4
 rateprofile 5
 
 # restore original rateprofile selection
-rateprofile 3
+rateprofile 1
 
 # save configuration
 save
