@@ -153,6 +153,7 @@
       "modes",
       "OSD",
       "rates",
+      "sbang",
       "switch"
     ]
   },
@@ -446,6 +447,24 @@
       "status": "COMMUNITY",
       "keywords": [
         "rates"
+      ],
+      "author": "gebeto",
+      "priority": 10000
+    },
+    {
+      "fullPath": "presets/rates/sbangy.txt",
+      "hash": "ded111262ea3f4a1ba9c8af302dc9be1199a0ff8c139637715dff28934b80584",
+      "title": "Sbangy Linear Rates",
+      "firmware_version": [
+        "4.3",
+        "4.4",
+        "4.5"
+      ],
+      "category": "RATES",
+      "status": "COMMUNITY",
+      "keywords": [
+        "rates",
+        "sbang"
       ],
       "author": "gebeto",
       "priority": 10000
