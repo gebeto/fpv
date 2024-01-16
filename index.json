@@ -140,7 +140,8 @@
     "category": [
       "BNF",
       "MODES",
-      "OSD"
+      "OSD",
+      "RATES"
     ],
     "author": [
       "gebeto"
@@ -151,6 +152,7 @@
       "mode",
       "modes",
       "OSD",
+      "rates",
       "switch"
     ]
   },
@@ -202,7 +204,7 @@
     },
     {
       "fullPath": "presets/bnf/BZHELYK.txt",
-      "hash": "ebca9ed7259ef07f5baee206637e388bad550b6858e709712d7e4628f8c6149a",
+      "hash": "68d2382a44458a7204b3c21aea6dc91d535d59d604da1d5793b69caf4f5cbb86",
       "title": "BZHELYK defaults",
       "firmware_version": [
         "4.4"
@@ -217,7 +219,7 @@
     },
     {
       "fullPath": "presets/bnf/Bibek.txt",
-      "hash": "5fa82e39defcae237053dfa9995d9f5bba4a73bd3b2fae2f4c2f7d6230e01735",
+      "hash": "741f5e53d933c8fe8ef8c3aa40699a07f23b60f5576a15ad1ce84e1ff4060bbb",
       "title": "Bibek defaults",
       "firmware_version": [
         "4.4"
@@ -413,6 +415,40 @@
       ],
       "author": "gebeto",
       "priority": 0
+    },
+    {
+      "fullPath": "presets/rates/high.txt",
+      "hash": "5030adae86d6aecc533873017b33b7e6f46f9a6bfe4ede0cf7b5583203a58e68",
+      "title": "High Rates",
+      "firmware_version": [
+        "4.3",
+        "4.4",
+        "4.5"
+      ],
+      "category": "RATES",
+      "status": "COMMUNITY",
+      "keywords": [
+        "rates"
+      ],
+      "author": "gebeto",
+      "priority": 10000
+    },
+    {
+      "fullPath": "presets/rates/medium.txt",
+      "hash": "61995cebe2e051bcd12a3420039e4147fa6f0c14aa2004bdf90d1f9597b0d759",
+      "title": "Medium Rates",
+      "firmware_version": [
+        "4.3",
+        "4.4",
+        "4.5"
+      ],
+      "category": "RATES",
+      "status": "COMMUNITY",
+      "keywords": [
+        "rates"
+      ],
+      "author": "gebeto",
+      "priority": 10000
     }
   ]
 }
