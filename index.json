@@ -279,6 +279,23 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/bnf/UNIVERSAL.txt",
+      "hash": "494b9833fd1e76ae7bcc6fdc64df16b3af7fc056ba281cfa562a74fa4d3084d2",
+      "title": "UNIVERSAL defaults",
+      "firmware_version": [
+        "4.3",
+        "4.4",
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "COMMUNITY",
+      "keywords": [
+        "defaults"
+      ],
+      "author": "gebeto",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/bnf/babyape_v2.txt",
       "hash": "0d91fc07e39e09503cb29ca5d07a75a89b5a5da095c8a5a4aee3a36814cf3d5e",
       "title": "Babyape v2 defaults",

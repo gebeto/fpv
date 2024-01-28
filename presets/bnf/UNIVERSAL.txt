@@ -1,0 +1,57 @@
+#$ TITLE: UNIVERSAL defaults
+#$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: BNF
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: defaults
+#$ AUTHOR: gebeto
+
+
+#$ OPTION_GROUP BEGIN: Radio
+    #$ OPTION BEGIN (UNCHECKED): Jumper T-Pro
+    	#$ INCLUDE: presets/modes/Jumper_T-Pro.txt
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): Radiomaster Boxer
+    	#$ INCLUDE: presets/modes/Boxer.txt
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): Radiomaster Pocket
+    	#$ INCLUDE: presets/modes/Pocket.txt
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+
+#$ OPTION_GROUP BEGIN: OSD
+    #$ OPTION BEGIN (UNCHECKED): Whoop
+		#$ INCLUDE: presets/osd/whoop.txt
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): Minimal
+		#$ INCLUDE: presets/osd/minimal.txt
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+
+#$ OPTION_GROUP BEGIN: RATES
+    #$ OPTION BEGIN (UNCHECKED): All
+		#$ INCLUDE: presets/rates/all.txt
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): Medium
+		#$ INCLUDE: presets/rates/medium.txt
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): High
+		#$ INCLUDE: presets/rates/high.txt
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): High Actual
+		#$ INCLUDE: presets/rates/high_actual.txt
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): Sbangy
+		#$ INCLUDE: presets/rates/sbangy.txt
+    #$ OPTION END
+#$ OPTION_GROUP END
