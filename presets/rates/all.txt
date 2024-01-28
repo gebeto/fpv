@@ -8,11 +8,11 @@
 #$ AUTHOR: gebeto
 
 
-rateprofile 1
+rateprofile 0
 #$ INCLUDE: presets/rates/medium.txt
 
-rateprofile 2
+rateprofile 1
 #$ INCLUDE: presets/rates/high.txt
 
-rateprofile 3
+rateprofile 2
 #$ INCLUDE: presets/rates/sbangy.txt
