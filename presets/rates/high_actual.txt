@@ -1,0 +1,34 @@
+#$ TITLE: High Actual Rates
+#$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: RATES
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: rates
+#$ AUTHOR: gebeto
+
+
+set rateprofile_name = -
+set thr_mid = 50
+set thr_expo = 0
+set rates_type = ACTUAL
+set quickrates_rc_expo = OFF
+set roll_rc_rate = 8
+set pitch_rc_rate = 8
+set yaw_rc_rate = 8
+set roll_expo = 60
+set pitch_expo = 56
+set yaw_expo = 40
+set roll_srate = 120
+set pitch_srate = 120
+set yaw_srate = 100
+set tpa_rate = 65
+set tpa_breakpoint = 1350
+set tpa_mode = D
+set throttle_limit_type = OFF
+set throttle_limit_percent = 100
+set roll_rate_limit = 1998
+set pitch_rate_limit = 1998
+set yaw_rate_limit = 1998
+set roll_level_expo = 0
+set pitch_level_expo = 0

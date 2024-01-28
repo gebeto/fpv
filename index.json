@@ -452,6 +452,23 @@
       "priority": 10000
     },
     {
+      "fullPath": "presets/rates/high_actual.txt",
+      "hash": "f977c2b6340388e8f8df493bef46b49a2a22c341a7018a546cd8382f407f69be",
+      "title": "High Actual Rates",
+      "firmware_version": [
+        "4.3",
+        "4.4",
+        "4.5"
+      ],
+      "category": "RATES",
+      "status": "COMMUNITY",
+      "keywords": [
+        "rates"
+      ],
+      "author": "gebeto",
+      "priority": 10000
+    },
+    {
       "fullPath": "presets/rates/medium.txt",
       "hash": "5442d4d94494df64b96ef1fe9eb7cc70962187fdfcf6775cf11cfa500d167684",
       "title": "Medium Rates",
