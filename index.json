@@ -418,6 +418,23 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/rates/all.txt",
+      "hash": "c10f3b45c1f83cbeb085f724404ea99a3efc8591c23df9f9c8203f1955a22804",
+      "title": "All Rates",
+      "firmware_version": [
+        "4.3",
+        "4.4",
+        "4.5"
+      ],
+      "category": "RATES",
+      "status": "COMMUNITY",
+      "keywords": [
+        "rates"
+      ],
+      "author": "gebeto",
+      "priority": 10000
+    },
+    {
       "fullPath": "presets/rates/high.txt",
       "hash": "5030adae86d6aecc533873017b33b7e6f46f9a6bfe4ede0cf7b5583203a58e68",
       "title": "High Rates",
@@ -436,7 +453,7 @@
     },
     {
       "fullPath": "presets/rates/medium.txt",
-      "hash": "61995cebe2e051bcd12a3420039e4147fa6f0c14aa2004bdf90d1f9597b0d759",
+      "hash": "5442d4d94494df64b96ef1fe9eb7cc70962187fdfcf6775cf11cfa500d167684",
       "title": "Medium Rates",
       "firmware_version": [
         "4.3",

@@ -8,7 +8,7 @@
 #$ AUTHOR: gebeto
 
 
-set rateprofile_name = Factory
+set rateprofile_name = Medium
 set thr_mid = 50
 set thr_expo = 0
 set rates_type = BETAFLIGHT
