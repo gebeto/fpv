@@ -35,3 +35,6 @@ aux 7 39 0 1400 2100 0 0
 adjrange 0 0 6 900 1200 29 6 0 0
 adjrange 1 0 6 1200 1800 29 6 0 0
 adjrange 2 0 6 1800 2100 29 6 0 0
+
+# RATES adjustments
+adjrange 3 0 7 900 2100 12 7 0 0
