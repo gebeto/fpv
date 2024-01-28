@@ -418,6 +418,22 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/osd/whoop.txt",
+      "hash": "de3b882f3da1ccbc371b32e9e9a7b5afde7738ce58135037300f41c001dc8d7e",
+      "title": "Whoop OSD",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "OSD",
+      "status": "COMMUNITY",
+      "keywords": [
+        "defaults",
+        "OSD"
+      ],
+      "author": "gebeto",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/rates/all.txt",
       "hash": "014c1c6a74694c2c8d029a4ff4c94353bceef45179d16b2bbc33f3536fe648cd",
       "title": "All Rates",
