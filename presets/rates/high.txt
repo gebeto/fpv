@@ -1,4 +1,4 @@
-#$ TITLE: High Rates
+#$ TITLE: High Actual Rates
 #$ FIRMWARE_VERSION: 4.3
 #$ FIRMWARE_VERSION: 4.4
 #$ FIRMWARE_VERSION: 4.5
@@ -8,20 +8,23 @@
 #$ AUTHOR: gebeto
 
 
-set rateprofile_name = High
+set rateprofile_name = -
 set thr_mid = 50
 set thr_expo = 0
-set rates_type = BETAFLIGHT
+set rates_type = ACTUAL
 set quickrates_rc_expo = OFF
-set roll_rc_rate = 142
-set pitch_rc_rate = 162
-set yaw_rc_rate = 145
-set roll_expo = 26
-set pitch_expo = 26
-set yaw_expo = 25
-set roll_srate = 76
-set pitch_srate = 76
-set yaw_srate = 71
+set roll_rc_rate = 8
+set pitch_rc_rate = 8
+set yaw_rc_rate = 8
+set roll_expo = 60
+set pitch_expo = 56
+set yaw_expo = 40
+set roll_srate = 120
+set pitch_srate = 120
+set yaw_srate = 100
+set tpa_rate = 65
+set tpa_breakpoint = 1350
+set tpa_mode = D
 set throttle_limit_type = OFF
 set throttle_limit_percent = 100
 set roll_rate_limit = 1998

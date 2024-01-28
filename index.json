@@ -280,7 +280,7 @@
     },
     {
       "fullPath": "presets/bnf/UNIVERSAL.txt",
-      "hash": "494b9833fd1e76ae7bcc6fdc64df16b3af7fc056ba281cfa562a74fa4d3084d2",
+      "hash": "9e458c195ad4dcc81ef0ad84fe2afe507bfc2f210075d91074856439472887fc",
       "title": "UNIVERSAL defaults",
       "firmware_version": [
         "4.3",
@@ -469,8 +469,8 @@
     },
     {
       "fullPath": "presets/rates/high.txt",
-      "hash": "5030adae86d6aecc533873017b33b7e6f46f9a6bfe4ede0cf7b5583203a58e68",
-      "title": "High Rates",
+      "hash": "f977c2b6340388e8f8df493bef46b49a2a22c341a7018a546cd8382f407f69be",
+      "title": "High Actual Rates",
       "firmware_version": [
         "4.3",
         "4.4",
@@ -485,9 +485,9 @@
       "priority": 10000
     },
     {
-      "fullPath": "presets/rates/high_actual.txt",
-      "hash": "f977c2b6340388e8f8df493bef46b49a2a22c341a7018a546cd8382f407f69be",
-      "title": "High Actual Rates",
+      "fullPath": "presets/rates/high_betaflight.txt",
+      "hash": "5030adae86d6aecc533873017b33b7e6f46f9a6bfe4ede0cf7b5583203a58e68",
+      "title": "High Rates",
       "firmware_version": [
         "4.3",
         "4.4",

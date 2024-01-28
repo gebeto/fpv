@@ -47,10 +47,6 @@
 		#$ INCLUDE: presets/rates/high.txt
     #$ OPTION END
 
-    #$ OPTION BEGIN (UNCHECKED): High Actual
-		#$ INCLUDE: presets/rates/high_actual.txt
-    #$ OPTION END
-
     #$ OPTION BEGIN (UNCHECKED): Sbangy
 		#$ INCLUDE: presets/rates/sbangy.txt
     #$ OPTION END
