@@ -469,7 +469,7 @@
     },
     {
       "fullPath": "presets/rates/high.txt",
-      "hash": "f977c2b6340388e8f8df493bef46b49a2a22c341a7018a546cd8382f407f69be",
+      "hash": "76f60ccf90fd9d8183204f505aee6b3129f3b271c2f5404a15aff14b4659b664",
       "title": "High Actual Rates",
       "firmware_version": [
         "4.3",
@@ -486,7 +486,7 @@
     },
     {
       "fullPath": "presets/rates/high_betaflight.txt",
-      "hash": "5030adae86d6aecc533873017b33b7e6f46f9a6bfe4ede0cf7b5583203a58e68",
+      "hash": "96888f49e4b6149008686d6a3f4b05288fa989df27e236c08a0679624ba9c8e3",
       "title": "High Rates",
       "firmware_version": [
         "4.3",
