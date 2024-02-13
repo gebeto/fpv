@@ -1,28 +1,8 @@
 # FPV Setup
 
 
-## Radio
+## Quads
 
-### model00.yml
-> [model00.yml](./model00.yml)
+ - [Bibek (Mobula6)](presets/bnf/Bibek)
 
-It is a Jumper T-Pro default config for ELRS
-
-### model01.yml
-> [model01.yml](./model01.yml)
-
-It is a Jumper T-Pro default config for USB connection
-
-## Quad Copter
-
-### modes.txt
-> [modes.txt](./modes.txt)
-
-It is a configuration file with default `modes` configured for `model00.yml`
- - arm
- - angle
- - horizon
- - beeper
- - osd disable
- - air mode
- - flip over after crash
+## [Modes](presets/modes/README)
