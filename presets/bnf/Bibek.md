@@ -5,7 +5,9 @@ This is my favourite indoor whoop
 ## Diff all
 
 ```sh
-{% raw %}
+
+{% capture diff %}
 {% include_relative bibek.txt %}
-{% endraw %}
+{% endcapture %}
+{{diff}}
 ```
