@@ -5,5 +5,5 @@ This is my favourite indoor whoop
 ## Diff all
 
 ```sh
-hello world
+{% include ../presets/bnf/bibek.txt %}
 ```
