@@ -1,5 +1,5 @@
 #$ TITLE: Bibek defaults
-#$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: BNF
 #$ STATUS: COMMUNITY
 #$ KEYWORDS: defaults
