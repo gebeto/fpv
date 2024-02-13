@@ -7,7 +7,7 @@ This is my favourite indoor whoop
 ```sh
 
 {% capture diff %}
-{% include_relative bibek.txt %}
+{% include_relative Bibek.txt %}
 {% endcapture %}
 {{diff}}
 ```
