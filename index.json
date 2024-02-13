@@ -220,10 +220,10 @@
     },
     {
       "fullPath": "presets/bnf/Bibek.txt",
-      "hash": "741f5e53d933c8fe8ef8c3aa40699a07f23b60f5576a15ad1ce84e1ff4060bbb",
+      "hash": "b56b0528dc306b12cfba06edb4a2d37d012ac0559650651b0c7cfaec5c748fcb",
       "title": "Bibek defaults",
       "firmware_version": [
-        "4.4"
+        "4.3"
       ],
       "category": "BNF",
       "status": "COMMUNITY",
