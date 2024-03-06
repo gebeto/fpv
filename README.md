@@ -5,6 +5,10 @@
 
  - [Bibek (Mobula6)](presets/bnf/Bibek)
 
+## Rates
+
+ - [High rates](presets/rates/high)
+
 ## Modes
 
  - [Radiomaster Pocket](presets/modes/Pocket.txt)
