@@ -1,0 +1,229 @@
+#$ TITLE: bzhelyk_2_0 defaults
+#$ FIRMWARE_VERSION: 4.4
+#$ CATEGORY: BNF
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: defaults
+#$ AUTHOR: gebeto
+
+
+#
+
+# diff all
+
+# version
+# Betaflight / STM32F411 (S411) 4.4.2 Jun  1 2023 / 02:20:34 (23d066d08) MSP API: 1.45
+
+# config: YES
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name CRAZYBEEF4SX1280
+manufacturer_id HAMO
+mcu_id 0070002d3132510536393632
+signature 
+
+# name: bzhelyk_2_0
+
+# resources
+resource LED_STRIP 1 NONE
+
+# feature
+feature -RX_SERIAL
+feature -SOFTSERIAL
+feature -TELEMETRY
+feature RX_SPI
+
+# serial
+serial 1 2048 115200 57600 0 115200
+
+# beacon
+beacon RX_LOST
+beacon RX_SET
+
+# aux
+aux 0 36 4 1900 2100 0 0
+aux 1 0 1 1400 1600 0 0
+aux 2 13 3 1900 2100 0 0
+aux 3 35 2 1900 2100 0 0
+aux 5 1 5 1200 1700 0 0
+aux 6 2 5 1700 2100 0 0
+aux 7 39 0 1400 2100 0 0
+
+# adjrange
+adjrange 0 0 6 900 1200 29 6 0 0
+adjrange 1 0 6 1200 1800 29 6 0 0
+adjrange 2 0 6 1800 2100 29 6 0 0
+adjrange 3 0 7 900 2100 12 7 0 0
+
+# vtxtable
+vtxtable bands 6
+vtxtable channels 8
+vtxtable band 1 BOSCAM_A A FACTORY 5865 5845 5825 5805 5785 5765 5745 5725
+vtxtable band 2 BOSCAM_B B FACTORY 5733 5752 5771 5790 5809 5828 5847 5866
+vtxtable band 3 BOSCAM_E E FACTORY 5705 5685 5665    0 5885 5905    0    0
+vtxtable band 4 FATSHARK F FACTORY 5740 5760 5780 5800 5820 5840 5860 5880
+vtxtable band 5 RACEBAND R FACTORY 5658 5695 5732 5769 5806 5843 5880 5917
+vtxtable band 6 LOWRACE  L FACTORY 5333 5373 5413 5453 5493 5533 5573 5613
+vtxtable powerlevels 5
+vtxtable powervalues 10 2 14 20 26
+vtxtable powerlabels 0 RCE 25 100 400
+
+# master
+set gyro_lpf1_static_hz = 0
+set gyro_lpf2_static_hz = 0
+set dyn_notch_count = 1
+set dyn_notch_q = 500
+set dyn_notch_min_hz = 150
+set gyro_lpf1_dyn_min_hz = 300
+set gyro_lpf1_dyn_max_hz = 550
+set acc_lpf_hz = 10
+set acc_trim_pitch = 1
+set acc_calibration = 13,-81,8,1
+set serialrx_provider = SPEK1024
+set dshot_idle_value = 1200
+set dshot_bidir = ON
+set dshot_bitbang = AUTO
+set motor_pwm_protocol = DSHOT300
+set motor_poles = 12
+set vbat_max_cell_voltage = 450
+set vbat_min_cell_voltage = 290
+set vbat_warning_cell_voltage = 310
+set ibata_scale = 470
+set yaw_motors_reversed = ON
+set small_angle = 180
+set gps_rescue_min_start_dist = 30
+set gps_rescue_ascend_rate = 500
+set gps_rescue_ground_speed = 500
+set gps_rescue_descend_rate = 100
+set gps_rescue_throttle_max = 1600
+set gps_rescue_throttle_d = 15
+set gps_rescue_velocity_i = 30
+set gps_rescue_velocity_d = 20
+set deadband = 1
+set yaw_deadband = 1
+set pid_process_denom = 4
+set simplified_gyro_filter = OFF
+set osd_tim1 = 30721
+set osd_rssi_pos = 314
+set osd_link_quality_pos = 2391
+set osd_rssi_dbm_pos = 2360
+set osd_tim_2_pos = 6540
+set osd_flymode_pos = 6554
+set osd_throttle_pos = 2425
+set osd_vtx_channel_pos = 2101
+set osd_current_pos = 2368
+set osd_mah_drawn_pos = 2402
+set osd_craft_name_pos = 2091
+set osd_warnings_pos = 14602
+set osd_avg_cell_voltage_pos = 6529
+set osd_disarmed_pos = 6379
+set osd_esc_rpm_pos = 161
+set osd_core_temp_pos = 2082
+set osd_rate_profile_name_pos = 2337
+set osd_pid_profile_name_pos = 289
+set osd_profile = 2
+set osd_canvas_width = 30
+set osd_canvas_height = 13
+set debug_mode = RX_EXPRESSLRS_SPI
+set vtx_band = 5
+set vtx_channel = 8
+set vtx_power = 5
+set vtx_low_power_disarm = ON
+set vtx_freq = 5917
+set pinio_box = 255,255,255,255
+set expresslrs_uid = 234,47,67,219,15,43
+set craft_name = bzhelyk_2_0
+
+profile 0
+
+# profile 0
+set dterm_lpf1_static_hz = 0
+set vbat_sag_compensation = 100
+set iterm_relax_cutoff = 20
+set yaw_lowpass_hz = 0
+set p_pitch = 80
+set i_pitch = 25
+set d_pitch = 80
+set f_pitch = 100
+set p_roll = 80
+set i_roll = 25
+set d_roll = 80
+set f_roll = 100
+set p_yaw = 90
+set i_yaw = 90
+set f_yaw = 100
+set d_max_advance = 0
+set feedforward_jitter_factor = 5
+set feedforward_boost = 18
+set feedforward_max_rate_limit = 95
+set simplified_pids_mode = OFF
+set simplified_master_multiplier = 145
+set simplified_i_gain = 65
+set simplified_d_gain = 185
+set simplified_pi_gain = 190
+set simplified_dmax_gain = 0
+set simplified_feedforward_gain = 130
+set simplified_pitch_d_gain = 85
+set simplified_pitch_pi_gain = 90
+
+profile 1
+
+profile 2
+
+profile 3
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+# rateprofile 0
+set rateprofile_name = Medium
+set rates_type = BETAFLIGHT
+set roll_rc_rate = 110
+set pitch_rc_rate = 110
+set yaw_rc_rate = 100
+set roll_srate = 75
+set pitch_srate = 75
+set yaw_srate = 70
+
+rateprofile 1
+
+# rateprofile 1
+set rateprofile_name = High
+set roll_rc_rate = 8
+set pitch_rc_rate = 8
+set yaw_rc_rate = 8
+set roll_expo = 60
+set pitch_expo = 56
+set yaw_expo = 40
+set roll_srate = 120
+set pitch_srate = 120
+set yaw_srate = 100
+
+rateprofile 2
+
+# rateprofile 2
+set rateprofile_name = SBangy
+set roll_rc_rate = 20
+set pitch_rc_rate = 20
+set yaw_rc_rate = 20
+set roll_expo = 10
+set pitch_expo = 10
+set yaw_expo = 10
+set roll_srate = 88
+set pitch_srate = 88
+set yaw_srate = 75
+
+rateprofile 3
+
+# restore original rateprofile selection
+rateprofile 1
+
+# save configuration
+save
+# 
