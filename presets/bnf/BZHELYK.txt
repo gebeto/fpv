@@ -175,11 +175,11 @@ set osd_sys_fan_speed_pos = 341
 set osd_profile = 2
 set osd_canvas_height = 13
 set debug_mode = RX_EXPRESSLRS_SPI
-set vtx_band = 1
-set vtx_channel = 1
+set vtx_band = 5
+set vtx_channel = 8
 set vtx_power = 4
 set vtx_low_power_disarm = ON
-set vtx_freq = 5865
+set vtx_freq = 5917
 set expresslrs_uid = 234,47,67,219,15,43
 set craft_name = BZHELYK
 
@@ -287,9 +287,38 @@ profile 3
 
 # profile 3
 set profile_name = Defaults
+set dterm_lpf1_static_hz = 0
+set vbat_sag_compensation = 100
+set iterm_relax_cutoff = 20
+set yaw_lowpass_hz = 0
+set p_pitch = 116
+set i_pitch = 135
+set d_pitch = 77
+set f_pitch = 212
+set p_roll = 123
+set i_roll = 143
+set d_roll = 80
+set f_roll = 226
+set p_yaw = 123
+set i_yaw = 143
+set f_yaw = 226
+set d_min_roll = 80
+set d_min_pitch = 77
+set d_max_advance = 0
+set feedforward_jitter_factor = 5
+set feedforward_boost = 18
+set feedforward_max_rate_limit = 95
+set simplified_master_multiplier = 145
+set simplified_i_gain = 65
+set simplified_d_gain = 185
+set simplified_pi_gain = 190
+set simplified_dmax_gain = 0
+set simplified_feedforward_gain = 130
+set simplified_pitch_d_gain = 85
+set simplified_pitch_pi_gain = 90
 
 # restore original profile selection
-profile 2
+profile 3
 
 rateprofile 0
 
