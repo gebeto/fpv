@@ -194,7 +194,6 @@ set d_max_advance = 0
 set feedforward_jitter_factor = 5
 set feedforward_boost = 18
 set feedforward_max_rate_limit = 95
-set dyn_idle_min_rpm = 90
 set simplified_i_gain = 65
 set simplified_d_gain = 185
 set simplified_pi_gain = 190
