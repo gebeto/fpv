@@ -51,3 +51,9 @@
 		#$ INCLUDE: presets/rates/sbangy.txt
     #$ OPTION END
 #$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: POWER MANAGEMENT
+    #$ OPTION BEGIN (UNCHECKED): Power 3.3 warning
+        #$ INCLUDE: presets/other/power.txt
+    #$ OPTION END
+#$ OPTION_GROUP END
