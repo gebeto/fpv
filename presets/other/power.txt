@@ -1,0 +1,13 @@
+#$ TITLE: Whoop Power settings
+#$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: OTHER
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: defaults
+#$ AUTHOR: gebeto
+
+
+set vbat_min_cell_voltage = 320
+set vbat_max_cell_voltage = 435
+set vbat_warning_cell_voltage = 330

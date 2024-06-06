@@ -141,6 +141,7 @@
       "BNF",
       "MODES",
       "OSD",
+      "OTHER",
       "RATES"
     ],
     "author": [
@@ -205,7 +206,7 @@
     },
     {
       "fullPath": "presets/bnf/BZHELYK.txt",
-      "hash": "35a56307bae1a59b4b1d501078dc7af0f5439cb9f1cf8c61cbffabb316de3ac7",
+      "hash": "8d51cb0a1c007b3e1e77e4b32abd1a812aa320a4fa836826d20c065adab4f926",
       "title": "BZHELYK defaults",
       "firmware_version": [
         "4.4"
@@ -224,6 +225,21 @@
       "title": "Bibek defaults",
       "firmware_version": [
         "4.3"
+      ],
+      "category": "BNF",
+      "status": "COMMUNITY",
+      "keywords": [
+        "defaults"
+      ],
+      "author": "gebeto",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/bnf/Bibek44.txt",
+      "hash": "aa1fa39f99442e7f1070483a34f2206143d022d161f81258d19887ab6791f895",
+      "title": "Bibek44 defaults",
+      "firmware_version": [
+        "4.4"
       ],
       "category": "BNF",
       "status": "COMMUNITY",
@@ -299,6 +315,36 @@
       "fullPath": "presets/bnf/babyape_v2.txt",
       "hash": "0d91fc07e39e09503cb29ca5d07a75a89b5a5da095c8a5a4aee3a36814cf3d5e",
       "title": "Babyape v2 defaults",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "BNF",
+      "status": "COMMUNITY",
+      "keywords": [
+        "defaults"
+      ],
+      "author": "gebeto",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/bnf/bzhelyk_1002.txt",
+      "hash": "76ed3b3c804e8ab953637582a1120879152ea9aa5f63ca9987948d2fdbf7a06c",
+      "title": "bzhelyk_1002 defaults",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "BNF",
+      "status": "COMMUNITY",
+      "keywords": [
+        "defaults"
+      ],
+      "author": "gebeto",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/bnf/bzhelyk_2_0.txt",
+      "hash": "e498cb6a18cf95269beec5f43f5962859ec075925b91b09d3da3f8f2c3125827",
+      "title": "bzhelyk_2_0 defaults",
       "firmware_version": [
         "4.4"
       ],
@@ -446,6 +492,23 @@
       "keywords": [
         "defaults",
         "OSD"
+      ],
+      "author": "gebeto",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/other/power.txt",
+      "hash": "cc3fa427c8f7087c5f8cd0a662a52989874964ba7905bff77c297931f8c500ff",
+      "title": "Whoop Power settings",
+      "firmware_version": [
+        "4.3",
+        "4.4",
+        "4.5"
+      ],
+      "category": "OTHER",
+      "status": "COMMUNITY",
+      "keywords": [
+        "defaults"
       ],
       "author": "gebeto",
       "priority": 0
