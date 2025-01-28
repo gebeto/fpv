@@ -4,7 +4,7 @@ description: My favorite high rates
 
 # High rates
 
-![HIgh Rates](https://i.imgur.com/OXMw9JQ.png)
+![HIgh Rates](./high.png)
 
 ## Diff
 
